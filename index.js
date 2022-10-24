@@ -30,7 +30,7 @@ app.get("/category/:name", (req, res) => {
     const name = req.params.name;
     const getCategory = productsCollection?.filter(p => p.category === name);
     if (!getCategory) {
-        res.send("Kono Product nei");
+        res.send("Konow Product nei");
     }
     res.send(getCategory);
 })
